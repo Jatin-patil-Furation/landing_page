@@ -6,7 +6,6 @@ import GameFeatures from "@/components/landing-page/GameFeatures";
 import Hero from "@/components/landing-page/Hero";
 import Offer from "@/components/landing-page/Offer";
 import Champions from "@/components/landing-page/champions/Champions";
-import Mobileh from "@/components/landing-page/mobilefullhero/mobileh";
 import React from "react";
 
 const page = () => {
