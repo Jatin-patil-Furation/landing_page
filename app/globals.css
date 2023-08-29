@@ -1,0 +1,224 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz@10..48&family=Lato:wght@300&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: myFont;
+  src: url(BillionaRegular-jElgy.ttf);
+}
+
+@font-face {
+  font-family: marbley;
+  src: url(MarbleyfreeRegular-vm857.otf);
+}
+
+.expl-text{
+  font-family: 'marbley';
+}
+
+
+     .shape {
+        width: 90%;
+        height: 77px;
+        background-color: rgb(154, 12, 12);
+        position: relative;
+        padding-top: 2px;
+        padding-bottom: 2px;
+        top: 0;
+      }
+      .shape:before {
+        content: "";
+        width: 99.8%;
+        height: 74px;
+        margin: auto;
+        background-color:rgb(59, 8, 17);
+        display: block;
+        position: absolute;
+        left: 1px;
+        z-index: -1;
+      }
+      .shape,
+      .shape:before {
+        -webkit-clip-path: polygon(5% 0, 100% 0, 100% 100%, 0 100%, 0 100%);
+        clip-path: polygon(3% 0%, 97% 0%, 100% 50%, 97% 100%, 3% 100%, 0% 55%);
+      }
+
+       /* ----------------- mobile nav---------------------- */
+
+       .mobilenav{
+        width: 95%;
+        height: 40px;
+        background-color: rgb(154, 12, 12);
+        position: relative;
+        top: 0;
+       }
+         .mobilenav:before {
+        content: "";
+        width: 99.7%;
+        height: 39px;
+        margin: auto;
+        background-color:rgb(59, 8, 17);
+        display: block;
+        position: absolute;
+        padding: 10px;
+        left: 1px;
+        top: 1px;
+        bottom: 1px;
+        right: 5px;
+        z-index: -1;
+      }
+      .mobilenav,
+      .mobilenav:before {
+        -webkit-clip-path: polygon(5% 0, 100% 0, 100% 100%, 0 100%, 0 100%);
+        clip-path: polygon(5% 0%, 95% 0%, 100% 50%, 95% 100%, 5% 100%, 0% 55%);}
+
+ /* ------- hero section------------ */
+
+ .join-button {
+  background: linear-gradient(
+    111.16deg,
+    rgba(173, 11, 64, 0.878431) 9.86%,
+    #ff1917 63.95%
+  );
+ }
+
+
+ @media screen and (min-width: 640px) {
+     .mobilehero{
+       display: none;
+     }
+     
+}
+
+@media screen and (min-width:500px) {
+   .mobilehero{
+        width: 90%;
+         margin: auto;
+     }
+     .sikka{
+      height: 100px;
+      margin-top: 15px;
+     }
+     .heroparagrapgh{
+      font-size: 1rem;
+     }
+     .herosign{
+       padding: 10px 15px 10px 15px;
+       font-size: 1rem;
+     }
+     .herologin{
+       padding: 7px 15px 7px 15px;
+       font-size: 1rem;
+     }
+
+}
+
+
+  /* ---------champ ---------- */
+ @media screen and (min-width: 1024px) {
+     .champmediumsize{
+       display: none;
+     }
+}
+  
+ @media screen and (min-width: 768px) {
+     .champmediumsize{
+       display: none;
+     }
+}
+  
+.champ-con {
+  border: .1px solid rgb(0, 0, 0);
+  background: rgb(7,7,7);
+background: linear-gradient(0deg, rgba(7,7,7,1) 66%, rgba(19,9,28,1) 100%);
+}
+
+
+.champ-logo {
+  background-color: rgba(180, 14, 13, 0.15);
+  font-family: "marbley";
+  font-size: 2.2rem;
+  font-weight: 400;
+  line-height: 3rem;
+  letter-spacing: 0em;
+}
+
+.champ-text{
+  font-family: 'marbley';
+  color: #ffffff;
+  font-weight: 400;
+}
+
+
+@media screen and (min-width:350px) {
+     .champ-text{
+       margin-top: 10px;
+     }
+     .game-text{
+      margin-top: 5px;
+     }
+}
+
+
+
+
+.champ-talk{
+ background-color: rgba(180, 14, 13, 0.15);
+  clip-path: polygon(5% 0%, 95% 0%, 100% 50%, 95% 100%, 5% 100%, 0% 50%);
+  font-family: "marbley";
+  font-size: 2.2rem;
+  font-weight: 400;
+  line-height: 3rem;
+  letter-spacing: 0em;
+}
+.user-descrip{
+  font-family: 'Lato';
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.3rem;
+  letter-spacing: 0em;
+}
+/* ----------- Swiper ------------  */
+.swiper-dot {
+  transition: width 0.3s ease, height 0.3s ease;
+}
+.Image{
+ width: 100px;
+}
+.user-descrip.selected{
+  color: #ffffff;  
+}
+.congrs.selected {  
+   background-image: url('../public/assets/champs/flying.svg');
+   width: 100%;
+}
+.image {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+ /* ---------------------- */
+
+ .game-box-con {
+  border: .1px solid #ad0b40;
+  background: linear-gradient(
+    180deg,
+    rgba(75, 73, 74, 0.7) 57.81%,
+    rgba(0, 0, 0, 0.7) 86.98%
+  );
+  border-image-source: linear-gradient(
+      111.16deg,
+      rgba(173, 11, 64, 0.878431) 9.86%,
+      #ff1917 63.95%
+    ),
+    linear-gradient(0deg, #b40e0d, #b40e0d);
+  box-shadow: 0px 0px 10px 0px #f442b799;
+   border-radius: 10px;
+   }
