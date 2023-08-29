@@ -1,6 +1,7 @@
 "use client"
 import { faqData } from '@/constants';
 import React, { useState } from 'react'
+// @ts-ignore
 import { ChevronUp, ChevronDown } from "lucide-react";
 
 const Faq = () => {
